@@ -77,8 +77,9 @@ iface = gr.Interface(
         gr.inputs.Image(type="file", label="Swap Image")
     ],
     outputs=gr.outputs.Image(type="file", label="Result"),
-    title=title
-)
+    title=title,
+    examples=[["input.jpg", "swap img.jpg"]])
+
 
 # Launch the Gradio Interface
 iface.launch()
