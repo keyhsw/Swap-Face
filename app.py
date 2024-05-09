@@ -73,10 +73,10 @@ title = "Swap Faces Using Our Model!!!"
 iface = gr.Interface(
     fn=predictor.predict,
     inputs=[
-        gr_inputs.Image(type="file", label="Target Image"),
-        gr_inputs.Image(type="file", label="Swap Image")
+        gr.inputs.Image(type="file", label="Target Image"),
+        gr.inputs.Image(type="file", label="Swap Image")
     ],
-    outputs=gr_outputs.Image(type="file", label="Result"),
+    outputs=gr.outputs.Image(type="file", label="Result"),
     title=title,
     examples=[["input.jpg", "swap img.jpg"]])
 
