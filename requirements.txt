@@ -2,4 +2,4 @@
  insightface==0.7.3
  onnxruntime
  gfpgan
- 
+ pydantic==2.7.1
