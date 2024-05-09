@@ -6,7 +6,7 @@ import gfpgan
 import tempfile
 import time
 import gradio as gr
-
+import gradio.inputs as gr_inputs
 
 class Predictor:
     def __init__(self):
@@ -73,10 +73,10 @@ title = "Swap Faces Using Our Model!!!"
 iface = gr.Interface(
     fn=predictor.predict,
     inputs=[
-        gr.inputs.Image(type="file", label="Target Image"),
-        gr.inputs.Image(type="file", label="Swap Image")
+        gr_inputs.Image(type="file", label="Target Image"),
+        gr_inputs.Image(type="file", label="Swap Image")
     ],
-    outputs=gr.outputs.Image(type="file", label="Result"),
+    outputs=gr_outputs.Image(type="file", label="Result"),
     title=title,
     examples=[["input.jpg", "swap img.jpg"]])
 
