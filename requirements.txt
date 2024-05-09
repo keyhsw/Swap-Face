@@ -2,4 +2,4 @@
  insightface==0.7.3
  onnxruntime
  gfpgan
- numpy>=1.22.3
+ 
