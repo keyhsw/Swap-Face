@@ -8,6 +8,13 @@ import time
 import gradio as gr
 import gradio.inputs as gr_inputs
 
+import os
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
+
+base_path = './models'
+os.system(f'git clone https://code.openxlab.org.cn/houshaowei/Swap-Face.git {base_path}')
+os.system(f'cd {base_path} && git lfs pull')
+
 class Predictor:
     def __init__(self):
         self.setup()
