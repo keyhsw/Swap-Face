@@ -8,8 +8,7 @@ import time
 import gradio as gr
 import gradio.inputs as gr_inputs
 
-import os
-from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
+os.system("pip install insightface==0.7.3")
 
 base_path = './models'
 os.system(f'git clone https://code.openxlab.org.cn/houshaowei/Swap-Face.git {base_path}')
