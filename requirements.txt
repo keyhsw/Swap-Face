@@ -1,5 +1,5 @@
- torchvision
- insightface==0.7.3
- onnxruntime
- gfpgan
- pydantic==2.7.1
+insightface==0.7.3
+onnxruntime
+gfpgan
+pydantic==2.7.1
+gradio==4.36.1
